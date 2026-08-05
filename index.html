@@ -21,7 +21,7 @@
             max-width: 800px;
             margin: 0 auto;
             display: flex;
-            p { 
+            p.autor{ 
                 font-weight: bold;
             }
         }
@@ -40,9 +40,18 @@
         <img src="imagem.png" alt="imagem de um canteiro de flor com animal";>
         <div>
         <h2>saroba </h2>
+        <p class="autor">por:Evelyn Soares</p>
         <p>te amo Guilherme Henrique Soares </p>
-        <p>por: Evelyn Soares</p>
+        <button>🌷<span>0</span></button>
         </div>
    </main>
 </body>
+<script>
+    const botao = document.querySelector("button")
+    botao.addEventListener("click", botaoClicado)
+    function botaoClicado() {
+        let texto = botao.querySelector("span")
+        texto.textContent++;
+    }
+</script>
 </html>
