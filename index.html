@@ -43,15 +43,17 @@
         <p class="autor">por:Evelyn Soares</p>
         <p>te amo Guilherme Henrique Soares </p>
         <button>🌷<span>0</span></button>
+        <button>🌺<span>0</span></button>
         </div>
    </main>
 </body>
 <script>
-    const botao = document.querySelector("button")
+    botoes.forEach (function(botao)) {
     botao.addEventListener("click", botaoClicado)
     function botaoClicado() {
         let texto = botao.querySelector("span")
         texto.textContent++;
     }
+}
 </script>
 </html>
